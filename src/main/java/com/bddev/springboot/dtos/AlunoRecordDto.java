@@ -9,6 +9,6 @@ public record AlunoRecordDto(@NotBlank String nome,
                              @NotNull double notaPrimeiroSemestre,
                              @NotNull double notaSegundoSemestre,
                              @NotBlank String numeroSala
-                             ) {
+) {
 
 }
