@@ -1,7 +1,6 @@
 package com.bddev.springboot.models;
 
-//import jakarta.persistence.*;
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.util.UUID;

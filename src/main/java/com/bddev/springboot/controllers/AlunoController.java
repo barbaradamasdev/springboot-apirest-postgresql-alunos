@@ -3,13 +3,7 @@ package com.bddev.springboot.controllers;
 import com.bddev.springboot.dtos.AlunoRecordDto;
 import com.bddev.springboot.models.AlunoModel;
 import com.bddev.springboot.repositories.AlunoRepository;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
-//import jakarta.validation.Valid;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,30 +15,13 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/alunos")
+@RequestMapping("/")
 public class AlunoController {
 
     @Autowired
     AlunoRepository alunoRepository;
 
     @PostMapping("/alunos")
-    @Operation(
-            description = "Create Post service",
-            responses = {
-                    @ApiResponse(
-                            responseCode = "200",
-                            description = "Successfully created post!",
-                            content = @Content(
-                                    mediaType ="application/json",
-                                    examples = {
-                                            @ExampleObject(
-                                                    value = "{\"code\" : 200, \"Status\" : \"Ok!\", \"Message\" :\"Successfully created post!\"}"
-                                            ),
-                                    }
-                            )
-                    )
-            }
-    )
     public ResponseEntity<AlunoModel> saveAluno(@RequestBody @Valid AlunoRecordDto alunoRecordDto) {
         var alunoModel = new AlunoModel();
         BeanUtils.copyProperties(alunoRecordDto, alunoModel);
@@ -86,5 +63,6 @@ public class AlunoController {
         alunoRepository.delete(aluno0.get());
         return ResponseEntity.status(HttpStatus.OK).body("Aluno deletado com sucesso");
     }
-
 }
+
+
