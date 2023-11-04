@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tb_alunos
+    username: postgres
+    password: post1727
+    name: tb_alunos
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 5
+      minimum-idle: 2
+
+  sql:
+    init:
+      mode: always
