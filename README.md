@@ -28,14 +28,12 @@ Este é um projeto que visa desenvolver um sistema CRUD (Create, Read, Update, D
 
 ### 👉🏼 Tecnologias utilizada:
 
-- **Java 17**: Utilizado como a linguagem principal para o backend, oferecendo uma base sólida para o desenvolvimento do sistema.
-- **Spring Boot 3**: Framework utilizado para simplificar o desenvolvimento de aplicativos Java, proporcionando recursos poderosos para a construção rápida de APIs REST eficientes.
-- **PostgreSQL**: Banco de dados relacional escolhido para armazenar os dados dos alunos. Sua robustez e confiabilidade o tornam ideal para a gestão de informações críticas.
-- **Spring Data JPA**: Uma parte integrante do ecossistema Spring, facilita a interação com bancos de dados relacionais, simplificando operações CRUD e consultas.
-- **Swagger**: Implementado para documentar a API de forma clara e interativa, permitindo uma compreensão fácil dos endpoints disponíveis e facilitando testes.
-- **Railway**: Utilizado para o deploy do projeto, oferecendo uma plataforma confiável e fácil de usar para hospedar aplicativos Java com facilidade de escalabilidade.
-
-Estas tecnologias combinadas garantem um ambiente de desenvolvimento moderno e eficaz, proporcionando uma experiência sólida tanto para os desenvolvedores quanto para os usuários finais.
+- **Java 17**: Utilizado como a linguagem principal para o backend.
+- **Spring Boot 3**: Framework utilizado para simplificar o desenvolvimento de aplicativos Java.
+- **PostgreSQL**: Banco de dados relacional escolhido para armazenar os dados dos alunos.
+- **Spring Data JPA**: Uma parte integrante do ecossistema Spring, facilita a interação com bancos de dados relacionais.
+- **Swagger**: Implementado para documentar a API de forma clara e interativa.
+- **Railway**: Utilizado para o deploy do projeto.
 
 ### 👩🏻‍💻 Endpoints
 A API oferece uma variedade de endpoints para facilitar o gerenciamento de informações acadêmicas dos alunos. Aqui estão as operações disponíveis:
