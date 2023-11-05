@@ -51,8 +51,63 @@ A API oferece uma variedade de endpoints para facilitar o gerenciamento de infor
 
 `DELETE` /alunos/id - Remove um aluno específico com base no identificador único (id).
 
-### Deploy
+### 🚀 Deploy
 - O deploy deste projeto está configurado para ser realizado no ambiente do Railway.
 
 [https://springboot-postgresql-alunos-production.up.railway.app/swagger-ui/index.html#](https://springboot-postgresql-alunos-production.up.railway.app/swagger-ui/index.html#)
 
+
+### 🚀🚀🚀 Desafios e Aprendizados na Implementação do Projeto
+Durante a execução do meu primeiro projeto prático envolvendo o uso de uma API REST e banco de dados, enfrentei diversos desafios que proporcionaram um enriquecedor aprendizado.
+
+Inicialmente, desenvolvi o projeto utilizando um banco de dados PostgreSQL local, obtendo sucesso, conforme evidenciado no video abaixo. Contudo, ao tentar fazer o deploy e transferir esse banco de dados para uma opção remota, encontrei obstáculos que não pude superar de maneira eficaz em tempo hábil para envio do desafio.
+
+Diante desse cenário, optei por criar dois branches no repositório do projeto:
+
+`Master Branch:`
+- Configuração utilizando o PostgreSQL interno da plataforma Railway.
+- No entanto, enfrentei dificuldades relacionadas a erros no protocolo HTTPS.
+
+`Local-db-postgres Branch:`
+- Utilizando o banco de dados local.
+- Para facilitar a avaliação do projeto, segue alguns dos dados que utilizei:
+
+```
+[
+  {
+    "idAluno": "3ced60ae-7ebb-49e0-a0d1-585749125459",
+    "nome": "Carlos Oliveira",
+    "idade": 19,
+    "notaPrimeiroSemestre": 88,
+    "notaSegundoSemestre": 91.5,
+    "nomeProfessor": "Mariana Souza",
+    "numeroSala": "Sala 102"
+  },
+  {
+    "idAluno": "322e0ad1-393c-4c38-837d-a87342f085a4",
+    "nome": "Mariana Souza",
+    "idade": 20,
+    "notaPrimeiroSemestre": 95.2,
+    "notaSegundoSemestre": 89.8,
+    "nomeProfessor": "Rafael Pereira",
+    "numeroSala": "Sala 103"
+  },
+  {
+    "idAluno": "fc5773a2-832b-4ae9-be5a-a17f66e85dba",
+    "nome": "Rafael Pereira",
+    "idade": 22,
+    "notaPrimeiroSemestre": 78.5,
+    "notaSegundoSemestre": 85,
+    "nomeProfessor": "Isabela Santos",
+    "numeroSala": "Sala 104"
+  }
+]
+```
+
+![Tela do postgresql local](https://github.com/barbaradamasdev/springboot-postgresql-alunos/blob/local-db-postgres/db%20local.png?raw=true)
+[Veja o video aqui](https://youtu.be/TYPDnAic9sI)
+
+
+Esses desafios foram valiosos para o meu desenvolvimento profissional, proporcionando uma compreensão mais aprofundada da integração entre API REST e bancos de dados, bem como a importância de considerações específicas durante o processo de deploy em ambientes remotos.
+
+Estou aberto a feedbacks e sugestões para aprimorar ainda mais o projeto, e estou comprometido em superar desafios futuros com uma abordagem mais informada e eficaz.
