@@ -3,16 +3,15 @@ package com.bddev.springboot.models;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
-import java.util.UUID;
+//import java.util.UUID;
 
 @Entity
 @Table(name = "TB_ALUNOS")
 public class AlunoModel implements Serializable {
-    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID idAluno;
+    private int idAluno;
     private String nome;
     private int idade;
     private double notaPrimeiroSemestre;
@@ -20,11 +19,11 @@ public class AlunoModel implements Serializable {
     private String nomeProfessor;
     private String numeroSala;
 
-    public UUID getIdAluno() {
+    public int getIdAluno() {
         return idAluno;
     }
 
-    public void setIdAluno(UUID idAluno) {
+    public void setIdAluno(int idAluno) {
         this.idAluno = idAluno;
     }
 
