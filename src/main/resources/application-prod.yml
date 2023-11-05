@@ -4,22 +4,3 @@ spring:
     username: ${PROD_DB_USERNAME}
     password: ${PROD_DB_PASSWORD}
     name: tb_alunos
-
-
-servers:
-  servlet:
-    context-path: https://springboot-postgresql-alunos-production.up.railway.app/swagger-ui/index.html#/
-  tomcat:
-    port-header: X-Forwarded-Port
-    remote-ip-header: X-Forwarded-For
-
-swagger:
-  enabled: true
-  docket:
-    sua-api:
-      groupName: springboot
-      select: "com.bddev.springbootr"
-  springfox:
-    documentation:
-      swagger-ui:
-        baseUrl: /springboot-postgresql-alunos-production.up.railway.app/swagger-ui
