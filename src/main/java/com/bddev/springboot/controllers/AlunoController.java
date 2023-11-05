@@ -23,7 +23,7 @@ public class AlunoController {
     AlunoRepository alunoRepository;
 
     @Operation(summary = "Adiciona um novo aluno", method = "POST")
-    @PostMapping("/alunos")
+    @PostMapping("https://springboot-postgresql-alunos-production.up.railway.app/alunos")
     public ResponseEntity<AlunoModel> saveAluno(@RequestBody @Valid AlunoRecordDto alunoRecordDto) {
         var alunoModel = new AlunoModel();
         BeanUtils.copyProperties(alunoRecordDto, alunoModel);
@@ -31,13 +31,13 @@ public class AlunoController {
     }
 
     @Operation(summary = "Retorna todos os alunos", method = "GET")
-    @GetMapping("/alunos")
+    @GetMapping("https://springboot-postgresql-alunos-production.up.railway.app/alunos")
     public ResponseEntity<List<AlunoModel>> getAllAluno(){
         return ResponseEntity.status(HttpStatus.OK).body(alunoRepository.findAll());
     }
 
     @Operation(summary = "Busca aluno por id", method = "GET")
-    @GetMapping("/alunos/{id}")
+    @GetMapping("https://springboot-postgresql-alunos-production.up.railway.app/alunos/{id}")
     public ResponseEntity<Object> getOneAlunos(@PathVariable(value = "id")UUID id) {
         Optional<AlunoModel> aluno0 = alunoRepository.findById(id);
         if(aluno0.isEmpty()){
@@ -47,7 +47,7 @@ public class AlunoController {
     }
 
     @Operation(summary = "Atualiza aluno por id", method = "PUT")
-    @PutMapping("/alunos/{id}")
+    @PutMapping("https://springboot-postgresql-alunos-production.up.railway.app/alunos/{id}")
     public ResponseEntity<Object> updateAluno(@PathVariable(value = "id")UUID id,
                                               @RequestBody @Valid AlunoRecordDto alunoRecordDto) {
         Optional<AlunoModel> aluno0 = alunoRepository.findById(id);
