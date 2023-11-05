@@ -73,35 +73,28 @@ Diante desse cenário, optei por criar dois branches no repositório do projeto:
 - Para facilitar a avaliação do projeto, segue alguns dos dados que utilizei:
 
 ```
-[
-  {
-    "idAluno": "3ced60ae-7ebb-49e0-a0d1-585749125459",
-    "nome": "Carlos Oliveira",
-    "idade": 19,
-    "notaPrimeiroSemestre": 88,
-    "notaSegundoSemestre": 91.5,
-    "nomeProfessor": "Mariana Souza",
-    "numeroSala": "Sala 102"
-  },
-  {
-    "idAluno": "322e0ad1-393c-4c38-837d-a87342f085a4",
-    "nome": "Mariana Souza",
-    "idade": 20,
-    "notaPrimeiroSemestre": 95.2,
-    "notaSegundoSemestre": 89.8,
-    "nomeProfessor": "Rafael Pereira",
-    "numeroSala": "Sala 103"
-  },
-  {
-    "idAluno": "fc5773a2-832b-4ae9-be5a-a17f66e85dba",
-    "nome": "Rafael Pereira",
-    "idade": 22,
-    "notaPrimeiroSemestre": 78.5,
-    "notaSegundoSemestre": 85,
-    "nomeProfessor": "Isabela Santos",
-    "numeroSala": "Sala 104"
-  }
-]
+INSERT INTO aluno (nome, idade, nota_primeiro_semestre, nota_segundo_semestre, nome_professor, numero_sala)
+VALUES
+  ('Ana Silva', 22, 87.5, 92.0, 'Oliveira', 201),
+  ('Carlos Santos', 21, 78.0, 85.5, 'Lima', 202),
+  ('Camila Pereira', 23, 91.0, 88.5, 'Costa', 203),
+  ('Diego Oliveira', 20, 82.5, 90.0, 'Silva', 204),
+  ('Fernanda Lima', 22, 89.0, 87.5, 'Santos', 205),
+  ('Gabriel Costa', 21, 85.5, 91.5, 'Pereira', 206),
+  ('Isabel Santos', 23, 93.5, 94.0, 'Oliveira', 207),
+  ('João Lima', 20, 80.0, 88.0, 'Costa', 208),
+  ('Juliana Pereira', 22, 88.5, 89.5, 'Santos', 209),
+  ('Lucas Costa', 21, 85.0, 90.5, 'Lima', 210),
+  ('Mariana Oliveira', 23, 92.0, 93.0, 'Silva', 211),
+  ('Pedro Santos', 20, 79.5, 86.0, 'Costa', 212),
+  ('Raquel Lima', 22, 90.5, 91.0, 'Pereira', 213),
+  ('Rafael Pereira', 21, 86.0, 89.0, 'Santos', 214),
+  ('Sara Costa', 23, 94.0, 92.5, 'Lima', 215),
+  ('Thiago Oliveira', 20, 81.5, 87.0, 'Silva', 216),
+  ('Valentina Santos', 22, 87.0, 90.5, 'Pereira', 217),
+  ('Vinícius Lima', 21, 84.5, 92.0, 'Costa', 218),
+  ('Yasmin Pereira', 23, 91.5, 91.5, 'Santos', 219),
+  ('Zé Carlos Costa', 20, 83.0, 88.5, 'Oliveira', 220);
 ```
 
 ![Tela do postgresql local](https://github.com/barbaradamasdev/springboot-postgresql-alunos/blob/local-db-postgres/db%20local.png?raw=true)
