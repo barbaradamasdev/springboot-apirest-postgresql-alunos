@@ -53,10 +53,6 @@ A API oferece uma variedade de endpoints para facilitar o gerenciamento de infor
 
 ### Deploy
 - O deploy deste projeto está configurado para ser realizado no ambiente do Railway.
+
 [https://springboot-postgresql-alunos-production.up.railway.app/swagger-ui/index.html#](https://springboot-postgresql-alunos-production.up.railway.app/swagger-ui/index.html#)
 
-
-### Desafios
-Sinta-se à vontade para contribuir para o projeto, abrindo problemas (issues) ou enviando solicitações de pull (pull requests). Todas as contribuições são bem-vindas!
-
-Agradecemos por participar deste esforço para criar uma ferramenta eficiente de gestão escolar.
