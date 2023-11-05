@@ -53,11 +53,9 @@ A API oferece uma variedade de endpoints para facilitar o gerenciamento de infor
 ### 🚀 Deploy
 - O deploy deste projeto está configurado para ser realizado no ambiente do Railway.
 
-
-<div style="max-width: 400px">
 [https://springboot-postgresql-alunos-production.up.railway.app/swagger-ui/index.html#](https://springboot-postgresql-alunos-production.up.railway.app/swagger-ui/index.html#)
-</div>
 
+<hr>
 
 ### 🚀🚀🚀 Desafios e Aprendizados na Implementação do Projeto
 Durante a execução do meu primeiro projeto prático envolvendo o uso de uma API REST e banco de dados, enfrentei diversos desafios que proporcionaram um enriquecedor aprendizado.
