@@ -2,7 +2,6 @@
 
 Este é um projeto que visa desenvolver um sistema CRUD (Create, Read, Update, Delete) para gerenciar informações dos alunos de uma escola. O sistema armazenará dados essenciais, proporcionando uma visão abrangente das informações acadêmicas.
 
-
 ![Tela da aplicação](https://github.com/barbaradamasdev/springboot-postgresql-alunos/blob/master/image.png?raw=true)
 
 ## 🚀 Dados Armazenados
@@ -54,7 +53,10 @@ A API oferece uma variedade de endpoints para facilitar o gerenciamento de infor
 ### 🚀 Deploy
 - O deploy deste projeto está configurado para ser realizado no ambiente do Railway.
 
+
+<div style="max-width: 400px">
 [https://springboot-postgresql-alunos-production.up.railway.app/swagger-ui/index.html#](https://springboot-postgresql-alunos-production.up.railway.app/swagger-ui/index.html#)
+</div>
 
 
 ### 🚀🚀🚀 Desafios e Aprendizados na Implementação do Projeto
