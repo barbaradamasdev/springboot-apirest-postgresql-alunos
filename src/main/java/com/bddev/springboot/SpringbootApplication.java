@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 		info = @Info(
 				title = "Gerenciamento de alunos",
 				version = "1.0.0",
-				description = "Projeto usando Java 17, Springboot 3, PostgreSQL",
+				description = "Projeto usando Java 17, Springboot 3, PostgreSQL. Repositorio com readme: https://github.com/barbaradamasdev/springboot-postgresql-alunos",
 				contact = @Contact(
 						name = "Barbara Damasceno",
 						email = "barbaradamas.dev@gmail.com"
